@@ -1,1 +1,18 @@
-<p>ui works!</p>
+<div class="d-flex flex-column">
+  <div>
+    <ng-content select=".header"></ng-content>
+    <!-- projeter instance de header component -->
+  </div>
+  <div>
+    <ng-content select=".nav"></ng-content>
+    <!-- projeter instance de nav component -->
+  </div>
+  <div class="flex-grow-1">
+    content
+    <!-- projeter intance component page -->
+  </div>
+  <div>
+    <ng-content select=".footer"></ng-content>
+    <!-- projeter instance footer component -->
+  </div>
+</div>
