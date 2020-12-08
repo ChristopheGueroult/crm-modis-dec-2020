@@ -1,0 +1,32 @@
+<header class="fixed-top">
+  <span (click)='toggle()' *ngIf="!open">
+    <ng-content select=".icon-nav"></ng-content>
+  </span>
+  <span (click)="toggle()"  *ngIf="open">
+    <ng-content select=".icon-close"></ng-content>
+  </span>
+  <ng-content select=".header"></ng-content>
+</header>
+<main [ngClass]="{'close-aside': !open}">
+
+  <div class="shadow position-fixed">
+  </div>
+
+  <aside>
+    <div class="scroller">
+      <ng-content select=".nav"></ng-content>
+    </div>
+  </aside>
+
+  <div class="page">
+
+    <div class="contents">
+      <ng-content select=".content"></ng-content>
+    </div>
+
+    <footer>
+      <ng-content select=".footer"></ng-content>
+    </footer>
+
+  </div>
+</main>
