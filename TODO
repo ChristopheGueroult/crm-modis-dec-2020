@@ -1,3 +1,10 @@
-☐ ui 2 et agilite
-☐ 
+☐ routerLink et routerLinkActive
+☐ lazy loading
+☐ preloading strategy
+
+☐ créer un module PageNotFoundModule (chargé en lazy loading)
+☐ créer un component PageNotFoundComponent (déclaré dans PageNotFoundModule)
+☐ créer un module PageNotFoundRoutingModule (importé manuellement sur PageNotFoundModule)
+☐ dans AppRoutingModule on cré une route pour demander au router de charger dynamiquement le module PageNotFoundModule
+☐ dans PageNotFoundRouting on crée une route pour demander au router d'instancier PageNotFoundComponent et d'ajouter <app-page-not-found> sous la balise <router-outlet> dans le dom
 
