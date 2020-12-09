@@ -1,6 +1,10 @@
-☐ routerLink et routerLinkActive
-☐ lazy loading
-☐ preloading strategy
+✔ routerLink et routerLinkActive @done(20-12-09 11:07)
+✔ lazy loading @done(20-12-09 11:07)
+✔ preloading strategy @done(20-12-09 11:07)
+
+✔ json server @done(20-12-09 13:02)
+✔ webpack bundle analyser @done(20-12-09 13:56)
+✔ compodoc @done(20-12-09 13:56)
 
 ☐ créer un module PageNotFoundModule (chargé en lazy loading)
 ☐ créer un component PageNotFoundComponent (déclaré dans PageNotFoundModule)

@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "jsonServer": "json-server --watch mock_db/db.json",
+    "analyze": "ng build --prod --stats-json && webpack-bundle-analyzer dist/crm-modis-dec/stats.json",
+    "doc": "compodoc -p tsconfig.json -o -s"
   },
   "private": true,
   "dependencies": {
@@ -28,12 +31,14 @@
     "bootstrap": "^4.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "webpack-bundle-analyzer": "^4.2.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1100.3",
     "@angular/cli": "~11.0.3",
     "@angular/compiler-cli": "~11.0.3",
+    "@compodoc/compodoc": "^1.1.11",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
