@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
+import { StateOrder } from 'src/app/core/enums/state-order.enum';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from 'src/app/core/services/orders.service';
 
@@ -11,6 +12,7 @@ import { OrdersService } from 'src/app/core/services/orders.service';
 export class PageListOrdersComponent implements OnInit, OnDestroy {
   // public collection!: Order[];
   public collection$!: Observable<Order[]>;
+  public states = Object.values(StateOrder);
   // private sub!: Subscription;
   public headers!: string[];
   constructor(private os: OrdersService) {
@@ -22,6 +24,14 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+  }
+
+  public changeState(item: Order, event: any): void {
+    const state = event.target.value;
+    this.os.changeState(item, state).subscribe((tripti) => {
+      item.state = tripti.state;
+    });
+
   }
 
   ngOnDestroy(): void {
