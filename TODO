@@ -6,9 +6,17 @@
 ✔ webpack bundle analyser @done(20-12-09 13:56)
 ✔ compodoc @done(20-12-09 13:56)
 
-☐ créer un module PageNotFoundModule (chargé en lazy loading)
-☐ créer un component PageNotFoundComponent (déclaré dans PageNotFoundModule)
-☐ créer un module PageNotFoundRoutingModule (importé manuellement sur PageNotFoundModule)
-☐ dans AppRoutingModule on cré une route pour demander au router de charger dynamiquement le module PageNotFoundModule
-☐ dans PageNotFoundRouting on crée une route pour demander au router d'instancier PageNotFoundComponent et d'ajouter <app-page-not-found> sous la balise <router-outlet> dans le dom
+☐ 10h30 appeler Virginie AVARE
+☐ lifecycles
+☐ observables
+☐ ng-content
+☐ unsubscribe
+☐ pipe async
+☐ change detection strategy
+
+✔ créer un module PageNotFoundModule (chargé en lazy loading) @done(20-12-09 20:17)
+✔ créer un component PageNotFoundComponent (déclaré dans PageNotFoundModule) @done(20-12-09 20:17)
+✔ créer un module PageNotFoundRoutingModule (importé manuellement sur PageNotFoundModule) @done(20-12-09 20:17)
+✔ dans AppRoutingModule on cré une route pour demander au router de charger dynamiquement le module PageNotFoundModule @done(20-12-09 20:18)
+✔ dans PageNotFoundRouting on crée une route pour demander au router d'instancier PageNotFoundComponent et d'ajouter <app-page-not-found> sous la balise <router-outlet> dans le dom @done(20-12-09 20:18)
 
