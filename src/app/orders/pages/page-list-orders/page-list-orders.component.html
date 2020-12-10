@@ -1,7 +1,7 @@
 <app-template-full-width>
   <h1 class="title">clients</h1>
   <ng-container class="contents">
-    <app-table-light *ngIf="collection" [headers]="headers">
+    <app-table-light *ngIf="collection$ | async as collection" [headers]="headers">
       <tr *ngFor="let item of collection">
         <td>{{ item.typePresta }}</td>
         <td>{{ item.client }}</td>

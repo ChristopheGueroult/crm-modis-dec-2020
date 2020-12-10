@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from 'src/app/core/services/orders.service';
 
@@ -9,13 +9,15 @@ import { OrdersService } from 'src/app/core/services/orders.service';
   styleUrls: ['./page-list-orders.component.scss']
 })
 export class PageListOrdersComponent implements OnInit, OnDestroy {
-  public collection!: Order[];
-  private sub!: Subscription;
+  // public collection!: Order[];
+  public collection$!: Observable<Order[]>;
+  // private sub!: Subscription;
   public headers!: string[];
   constructor(private os: OrdersService) {
-    this.sub = this.os.collection$.subscribe((data) => {
-      this.collection = data;
-    });
+    // this.sub = this.os.collection$.subscribe((data) => {
+    //   this.collection = data;
+    // });
+    this.collection$ = this.os.collection$;
     this.headers = ['Type', 'Client', 'NbJours', 'Tjm HT', 'Total HT', 'Total TTC', 'State'];
   }
 
@@ -23,7 +25,7 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+    // this.sub.unsubscribe();
   }
 
 }
