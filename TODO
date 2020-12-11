@@ -6,13 +6,22 @@
 ✔ webpack bundle analyser @done(20-12-09 13:56)
 ✔ compodoc @done(20-12-09 13:56)
 
-☐ 10h30 appeler Virginie AVARE
-☐ lifecycles
-☐ observables
-☐ ng-content
-☐ unsubscribe
-☐ pipe async
-☐ change detection strategy
+✔ 10h30 appeler Virginie AVARE @done(20-12-11 08:39)
+✔ lifecycles @done(20-12-11 08:39)
+✔ observables @done(20-12-11 08:39)
+✔ ng-content @done(20-12-11 08:39)
+✔ unsubscribe @done(20-12-11 08:39)
+✔ pipe async @done(20-12-11 08:39)
+✔ change detection strategy @done(20-12-11 08:39)
+
+✔ force change detection @done(20-12-11 08:39)
+☐ viewencapsulation
+☐ directive perso
+☐ tp client
+☐ formulaire
+☐ m2isign , evals formateur
+☐ tp edit, delete, etc ....
+☐ jest
 
 ✔ créer un module PageNotFoundModule (chargé en lazy loading) @done(20-12-09 20:17)
 ✔ créer un component PageNotFoundComponent (déclaré dans PageNotFoundModule) @done(20-12-09 20:17)
