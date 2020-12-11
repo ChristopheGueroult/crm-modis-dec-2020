@@ -49,6 +49,16 @@
       "client": "Capgemini",
       "comment": "Merci Capgemini ",
       "id": 5
+    },
+    {
+      "tjmHt": 1200,
+      "nbJours": 2,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "formation",
+      "client": "Capgemini",
+      "comment": "Merci ",
+      "id": 6
     }
   ],
   "clients": [

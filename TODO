@@ -15,8 +15,8 @@
 ✔ change detection strategy @done(20-12-11 08:39)
 
 ✔ force change detection @done(20-12-11 08:39)
-☐ viewencapsulation
-☐ directive perso
+✔ viewencapsulation @done(20-12-11 10:19)
+✔ directive perso @done(20-12-11 10:19)
 ☐ tp client
 ☐ formulaire
 ☐ m2isign , evals formateur
@@ -29,3 +29,11 @@
 ✔ dans AppRoutingModule on cré une route pour demander au router de charger dynamiquement le module PageNotFoundModule @done(20-12-09 20:18)
 ✔ dans PageNotFoundRouting on crée une route pour demander au router d'instancier PageNotFoundComponent et d'ajouter <app-page-not-found> sous la balise <router-outlet> dans le dom @done(20-12-09 20:18)
 
+☐ créer un enum ACTIVE, INACTIVE
+☐ Interface ClientI
+☐ Model Client (20 tva, ACTIVE state, 0 totalCaHT)
+☐ ClientsService
+☐ PageListClientsComponent
+  ☐ dans le html (table-light, template-fullwidth, StateDirective, Pipe)
+  ☐ dans html colones du tableau clients : name, total ht, tva, total ttc (en utilisant le pipe Total), state (avec un select)
+  ☐ dans table-light scss (.state-active, .state-inactive)

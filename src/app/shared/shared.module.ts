@@ -5,6 +5,7 @@ import { TableLightComponent } from './components/table-light/table-light.compon
 import { BtnComponent } from './components/btn/btn.component';
 import { TotalPipe } from './pipes/total.pipe';
 import { StateDirective } from './directives/state.directive';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +16,7 @@ import { StateDirective } from './directives/state.directive';
   ],
   exports: [
     TemplatesModule,
+    ReactiveFormsModule,
     TableLightComponent,
     BtnComponent,
     TotalPipe,
